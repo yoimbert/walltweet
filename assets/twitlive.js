@@ -1,7 +1,3 @@
-/*!
- * Pascal GAULT - pascal@inrage.fr
- * <www.inrage.fr>
- */
 (function($) {
     $.fn.liveTweets = function(options) {
 
