@@ -3,8 +3,6 @@ Connection OAuth
 
 here for command GET
 
-ok
-
 */
 
 (function($) {
