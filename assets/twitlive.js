@@ -1,3 +1,10 @@
+/*
+Connection OAuth
+
+here for command GET
+
+*/
+
 (function($) {
     $.fn.liveTweets = function(options) {
 
@@ -62,24 +69,24 @@
 
             /** CHANGE TAGS **/
             $("ul li a").on('click', function() {
-                
-                
+
+
                 $("ul li a").removeClass('active');
-                
+
                 $(this).addClass('active');
-             
-           
+
+
                 if($(this).hasClass('all-tags')) {
-                    
+
                     var tags = [];
-                    
+
                     $('.search-tweet').each(function(){
-                        
+
                         tags.push($(this).text());
                     });
-                    
+
                     console.log(tags.join(' OR '));
-                    
+
                     customize(tags.join(' OR '));
                 } else {
                     customize($(this).text());
@@ -144,7 +151,7 @@
                 return text.replace(exp, "<a target='_blank' href='http://twitter.com/$1'>@$1 </a>");
             };
 
-            // Format URLs in tweet - optional - 
+            // Format URLs in tweet - optional -
             var formatTweetMsg = function(text) {
                 if (options.convertTextlink == true) {
                     text = formatUrl(text);
@@ -202,7 +209,7 @@
                     tweetThumb = tweetThumb.replace("_normal", "");
                 }
 
-                // Set data       
+                // Set data
                 if (tweetThumb.indexOf('default_profile') > 0) {
                     var tweetDiv = $('<div id="tweet_' + tweets[nr].id + '" class="tweet dark"><div class="content"><div class="profile"><img src="' + tweetThumb + '" alt="" /><a href="#">@' + tweetAuthor + '</a></div><p>' + formatTweetMsg(tweetMsg) + '</p></div></div>');
                     //var tweetDiv = $("<div class='tweet " + tweetClass + "' id='tweet_" + tweets[nr].id + "'><img width='48' height='48' class='tweet_foto' src='" + noThumbnailPath + "'/><div class='tweet_text'><a  class='profile' target='_blank' href='" + twitterURL + tweetAuthor + "'>@" + tweetAuthor + "</a> " + formatTweetMsg(tweetMsg) + "<span>" + formatTime(tweetDate) + "</span></div></div>");
@@ -227,7 +234,7 @@
                 }
 
                 $('.tweets-bottom .tweet:gt(3)').remove();
-                
+
                 // trigger event
                 $(document).trigger('colorize');
 
