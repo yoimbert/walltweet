@@ -1,0 +1,171 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: Arial;
+    color: white;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0099B9;
+}
+#site {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#tags {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 50%;
+    margin-top: -25px;
+    height: 50px;
+}
+#tags .tweets-top {
+    position: absolute;
+    bottom: 55px;
+    text-align: center;
+    width: 100%;
+}
+#tags .tweets-bottom {
+    position: absolute;
+    top: 55px;
+    text-align: center;
+    width: 100%;   
+}
+#tags .profile {
+}
+#tags .profile img {
+    width: 30px;
+    vertical-align: middle;
+}
+#tags .tweets-top .profile {
+    margin-top: 10px;
+}
+#tags .tweets-bottom .profile {
+    margin-bottom: 10px;
+}
+#tags .profile a {
+   background-repeat: no-repeat;
+   line-height: 30px;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 14px;
+   color: white;
+   padding-left: 10px;
+}
+#tags .tweets-bottom .tweet {
+    vertical-align: top;
+}
+#tags .tweet {
+    text-align: left;
+    max-width: 24%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 0.5%;
+    background: cornflowerblue;
+    word-wrap:break-word;
+    display: inline-block;
+}
+#tags .tweet.dark {
+    background: #5d5358;
+}
+#tags .tweet.light {
+    background: #51667b;
+}
+#tags .tweet .content {
+    padding: 10px;
+}
+#tags ul {
+    background: #d9dbd0;
+    width: 100%;
+    list-style: none;
+    height: 50px;
+}
+#tags ul li {
+    float: left;
+    margin-left: 30px;
+}
+#tags ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 50px;
+    display: block;
+    padding: 0 10px;
+}
+#tags ul li a.active,
+#tags ul li a:hover {
+    background: #3f393c;
+    color: white;
+}
+#logo {
+    width: 261px;
+    height: 150px;
+    position: absolute; 
+    top: 10px;
+    left: 10px;
+}
+#logo img {
+	width: 100%;
+	height: 100%;
+}
+#time {
+	position: absolute;
+	right: 60px;
+	top: 70px;
+	font-size: 48px;
+	color: black;
+}
+#footer {
+	position: absolute;
+	bottom: 30px;
+	text-align: center;
+}

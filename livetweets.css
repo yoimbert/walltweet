@@ -1,0 +1,49 @@
+/* 
+	Important styles - (used by this app) 
+*/
+
+.tweet { overflow: hidden; clear: both; text-align: left; margin-bottom: 16px; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-left: 8px; margin-right: 8px; }
+.tweet.first { border: none; margin-bottom: 0px; }
+.tweet_foto { float: left; margin-right: 8px; }
+.tweet_text { float: left; font-size: 11px; width: 292px; line-height: 16px; }
+.tweet_text a { color: #000; }
+.tweet_text a:hover { color: #B64926; }
+.tweet_text a.profile { color: #B64926; text-decoration: none; font-weight: bold; }
+.tweet_text span { display: block; color: #ccc; }
+
+
+
+
+
+/* 
+	General styling 
+*/
+
+body { text-align: center; padding-top: 100px; font-family: "Myriad Pro", "Arial"; }
+.wrapper { width: 960px; margin: auto; overflow: hidden; }
+.documentation { width: 590px; float: left; text-align: left; font-size: 16px; }
+.documentation h1 { font-size: 28px; font-weight: bold; border-bottom: 1px solid #d4d4d4; width: 90%; margin-bottom: 20px; padding-bottom: 10px;  }
+.documentation p { margin-bottom: 20px; line-height: 22px; width: 90%; }
+.documentation p span { font-size: 13px;  display: block; padding-left: 10px;}
+.documentation p span em { font-size: 13px; width: 400px; left: 30px; position: relative;float: right;}
+.documentation strong { font-weight: bold; }
+.documentation em { color: #666; font-style: italic; font-size: 15px; }
+.documentation a.ac { display: inline-block; background-color: #B64926; padding: 8px; color: #fff; text-decoration: none; -moz-border-radius: 16px; }
+
+.sidebar { float: left; width: 370px; }
+
+#container { width: 370px; margin: auto; text-align: left; overflow: hidden; position: relative; }
+#tweet_container { width: 370px; margin: auto; text-align: left; height: 800px; overflow: hidden; font-weight: normal; }
+#container h1 { text-transform: uppercase; font-weight: bold; font-size: 14px; border: 1px solid #d4d4d4; height: 38px; background-image: url(img/title_bg.gif); background-repeat: repeat-x; line-height: 42px; padding-left: 8px; color: #5d5c5a; }
+.holder { border: 1px solid #d4d4d4; padding-top: 8px; border-top: none; max-height: 403px; padding-bottom: 8px; }
+.customizeWindow { font-size: 12px; text-transform: none; color: #000; text-decoration: none; float: right; padding-right: 8px; }
+.customizeMe { width: 280px; height: 280px; font-size: 12px; border: 1px solid #d4d4d4; padding: 8px; line-height: 16px; position: absolute; top: 0px; right: 0px; background-color: #fff; display: none; }
+.customizeMe h2 { font-weight: bold; font-size: 14px; padding-bottom: 4px; }
+.customizeMe h2 a { text-decoration: none; float: right; color: #000; }
+.customizeMe label { color: #B64926; margin-right: 7px; display: inline-block; }
+.customizeMe input[type=text] { border: 1px solid #d4d4d4; font-size: 14px; padding: 2px; line-height: 17px; width: 185px; margin-bottom: 8px; }
+.customizeMe input[type=button] { margin-top: 8px; }
+.customizeMe strong { margin-top: 28px; display: block; font-weight: bold; color: #333; }
+.customizeMe ul { margin-bottom: 8px; }
+.customizeMe ul li { border-bottom: 1px solid #d4d4d4; line-height: 24px; font-size: 11px; position: relative; }
+.customizeMe ul li span { color: #666; position: absolute; left: 100px; }
